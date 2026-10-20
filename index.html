@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>포가튼 렐름 텍스트 어드벤처 업데이트</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f6f4ef; --fg: #1d1c1a; --muted: #6b675f; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #17161a; --fg: #ecebe6; --muted: #9a968d; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, "Malgun Gothic", sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 1.5rem; margin: 0 0 8px; }
+  p { color: var(--muted); }
+  code { font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>포가튼 렐름 텍스트 어드벤처</h1>
+  <p>개인용 게임의 자동 업데이트 파일을 두는 곳입니다. 게임이 <code>manifest.json</code>을 읽고 바뀐 파일만 내려받습니다.</p>
+  <p id="ver"></p>
+</main>
+<script>
+  fetch("manifest.json").then(r => r.json()).then(m => {
+    document.getElementById("ver").textContent = "현재 버전 " + m.app_version + " · 파일 " + m.files.length + "개";
+  }).catch(() => {});
+</script>
+</body>
+</html>
