@@ -1,7 +1,7 @@
 {
  "format": 1,
  "game": "fr-text-adventure",
- "app_version": "0.5.0",
+ "app_version": "0.6.0",
  "engine": "4.7.2",
  "date": "2026-10-21",
  "files": [
@@ -13,9 +13,9 @@
   },
   {
    "path": "FRAdventure.pck",
-   "sha256": "27be227ad05cdd593d1255cfe3602f38cd0690d761ff2e83cc519065da403aa9",
-   "size": 6900728
+   "sha256": "e27d2fd1361123749fdc7e005199adaa599a2f668599ee257a0910fd952802df",
+   "size": 7002936
   }
  ],
- "installer": "https://github.com/RoastedBeer24/fr-text-adventure-updates/releases/download/v0.5.0/FRAdventure-Setup-0.5.0.exe"
+ "installer": "https://github.com/RoastedBeer24/fr-text-adventure-updates/releases/download/v0.6.0/FRAdventure-Setup-0.6.0.exe"
 }
